@@ -40,7 +40,7 @@ def main():
                 break
     pygame.quit()
 
-
+main()
 
 
 
