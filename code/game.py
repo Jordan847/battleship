@@ -30,15 +30,21 @@ ships = {
 
 #game loop
 def main():
-    run = True
+    while True:
+        window_close()
+        render.render()
 
-    while run:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                print("bye")
-                run = False
-                break
-    pygame.quit()
+
+def window_close():
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            print("bye")
+            pygame.quit()
+            quit()
+
+
+
+
 
 main()
 
